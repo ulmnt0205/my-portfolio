@@ -1,0 +1,174 @@
+@charset "UTF=8";
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul {
+    background-color: #253958;
+    color: #FFFFFF;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    padding: 20px;
+    gap: 18px;
+    margin: 0;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero.lp {
+    padding: 287px 18px;
+    background-image: url(../images/home-hero.jpg);
+}
+
+h1 {
+    animation-name: slidein_anime;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes slidein_anime {
+  0% {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.darkblue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #253958;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    gap: 20px;
+}
+
+.darkblue img {
+    width: 500px;
+    border-radius: 50px;
+}
+
+h3 {
+    text-align: center;
+    border-bottom: 3px dotted #FFFFFF;
+    margin: 0 8px;
+    padding: 10px;
+}
+
+p {
+    padding: 20px;
+}
+
+.more {
+    text-align: center;
+    background-color: #253958;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.thoughts {
+    text-align: center;
+    background-color: #253958;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    gap: 20px;
+}
+
+.thoughts img {
+    width: 1000px;
+    border-radius: 50px;
+}
+
+.comment {
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #253958;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .darkblue {
+        flex-wrap: wrap;
+    }
+}
