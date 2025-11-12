@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオサイトです">
+    <link rel="icon" href="./images/favicon.ico">
+    <link href="">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+    <title>Portfolio</title>
+</head>
+<body id="top">
+    <div class="top-bg">
+    <!-- ヘッダー -->
+        <header class="header">
+            <a href="index.html"><img src="./images/logo.png" alt="ロゴ"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about" class="button">ABOUT</a></li>
+                    <li><a href="index.html#works" class="button">WORKS</a></li>
+                    <li><a href="contact.html" class="button">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- ヘッダーここまで -->
+    <!-- メイン -->
+    <main class="contact-main">
+        <h1>CONTACT</h1>
+        <p class="contact-intro">お問い合わせ・ご質問などお気軽にご連絡ください。</p>
+
+        <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="contact-btn">送信</button>
+        </form>
+        <a href="index.html#top" class="to-top"><img src="./images/go-top.png" alt="TOPへ戻る"></a>
+    </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 Portfolio</p>
+  </footer>
+
+</body>
+</html>
